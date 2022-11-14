@@ -14,5 +14,7 @@ function func() {
         alert("Benvenutə al Club di Letteratura!");
     } else {
         alert("Just Monika.");
+        const justmonika = document.getElementById("justmonika");
+        justmonika.play();
     }
 }
