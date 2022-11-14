@@ -1,6 +1,7 @@
 function func() {
     const arrayn = [];
-    let insieme = "";
+    let insiemedisp = "";
+    let insiemepari = "";
     arrayn.push(document.getElementById("n1").value);
     arrayn.push(document.getElementById("n2").value);
     arrayn.push(document.getElementById("n3").value);
@@ -10,10 +11,13 @@ function func() {
     
     for (let i = 0; i < arrayn.length; i++) {
         if ((parseInt(arrayn[i]) % 2) === 1){
-            insieme+=" " +arrayn[i];
+            insiemedisp+=" " +arrayn[i];
+        }
+        if ((parseInt(arrayn[i]) % 2) === 0){
+            insiemepari+=" " +arrayn[i];
         }
     }
 
-    alert("L'insieme dei numeri dispari è:" + insieme);
+    alert("L'insieme dei numeri dispari è:" + insiemedisp +".\nL'insieme dei numeri pari è:" + insiemepari + ".");
 
 }
