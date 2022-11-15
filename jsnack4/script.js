@@ -1,9 +1,10 @@
-function func() {
-    let invitati = ['sayori', 'yuri', 'natsuki', 'monika'];
+const invitati = ['sayori', 'yuri', 'natsuki', 'monika'];
+
+function calcola() {
     let nome = document.getElementById("nome").value;
     let invito = false;
 
-    for (let i = 0; i < nome.length ; i++){
+    for (let i = 0; i < invitati.length ; i++){
         if (nome.toLowerCase() == invitati[i]){
             invito = true;
             break;
